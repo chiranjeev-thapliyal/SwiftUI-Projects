@@ -10,6 +10,7 @@ import Foundation
 @Observable
 class ModelData {
     var landmarks: [Landmark] = load("landmarkData.json")
+    var profile = Profile.default
     var categories: [String: [Landmark]] {
         Dictionary (
             grouping: landmarks,
